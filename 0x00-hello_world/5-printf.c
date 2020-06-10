@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+/*Let's to print a message*/
+
 int main(void);
 {
-	char text[] = "with proper grammar, but the outcome is a piece of art"
 
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 
-	printf("%c,\n");
-	return (0);
+	return(0);
+
 }
