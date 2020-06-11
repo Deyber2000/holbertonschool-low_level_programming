@@ -11,7 +11,7 @@ int main(void)
 
 	while (letra <= 'z')
 	{
-		printf("%c", letra);
+		putchar(letra);
 		letra++;
 	}
 	return (0);
