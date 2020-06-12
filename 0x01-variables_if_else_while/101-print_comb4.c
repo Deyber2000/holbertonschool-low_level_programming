@@ -13,16 +13,16 @@ int main(void)
 
 	int c;
 
-	for (a = 0; a < 9; a++)
+	for (a = 0; a <= 7; a++)
 	{
-		for (b = a + 1; b < 10; b++)
+		for (b = a + 1; b <= 8; b++)
 		{
 			for (c = b + 1; c <= 9; c++)
 			{
 				putchar(a % 10 + '0');
 				putchar(b % 10 + '0');
 				putchar(c % 10 + '0');
-				if (a > 6)
+				if (a != 7)
 				putchar(',');
 				putchar(' ');
 			}
