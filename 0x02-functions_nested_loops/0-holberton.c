@@ -1,15 +1,20 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  *main - Entry point
  *Return: Always 0 (Success)
-x */
+ */
 
-int main (void)
+int main(void)
 {
-	printf("Holberton\n");
+	char a[] = "Holberton";
 
+	int i = 0;
 
-
-	return (0);
+	while (a[i] != '\0')
+	{
+		_putchar(a[i]);
+		i++;
+	}
+	return(0)
 }
