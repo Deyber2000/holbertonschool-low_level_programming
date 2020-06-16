@@ -2,7 +2,9 @@
 
 /**
  *_islower - Entry point
- *Return: Always 0 (Success)
+ * isLower - main
+ * @c : return
+ * Return: 1 o 0
  */
 int _islower(int c)
 {
