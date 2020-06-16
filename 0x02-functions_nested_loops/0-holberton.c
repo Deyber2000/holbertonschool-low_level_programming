@@ -14,7 +14,7 @@ int main(void)
 
 	while (a[i] != '\0')
 	{
-		_putchar(a[i]);
+		_putchar[i];
 		i++;
 	}
 	return (0);
