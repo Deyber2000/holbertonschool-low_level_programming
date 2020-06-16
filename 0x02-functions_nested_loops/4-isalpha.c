@@ -2,7 +2,9 @@
 
 /**
  *_isalpha - Entry point
- *Return: 0 o 1
+ * isAlpha - main
+ * @c : return
+ * Return: 1 o 0
  */
 
 int _isalpha(int c)
