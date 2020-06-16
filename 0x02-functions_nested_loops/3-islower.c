@@ -1,23 +1,22 @@
 #include "holberton.h"
-#include <ctype.h>
-#include <stdio.h>
+
 /**
  *_islower - Entry point
  *Return: Always 0 (Success)
  */
 int _islower(int c)
 {
-	int a = 1;
 
-	int b = 0;
+int a;
 
-	if(c >= 'A' && c <= 'Z')
+
+	if (c >= 'A' && c <= 'Z')
 	{
-		printf("%d", b );
+		a = 0;
 	}
-	else if(c >= 'a' && c <= 'z')
+	else if (c >= 'a' && c <= 'z')
 	{
-		printf("%d", a);
+		a = 1;
 	}
-	return (0);
+	return (a);
 }
