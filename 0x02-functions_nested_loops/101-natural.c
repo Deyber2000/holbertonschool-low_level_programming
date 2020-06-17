@@ -20,4 +20,5 @@ int main(void)
 	}
 	printf("%d", suma);
 	printf("\n");
+	return (0);
 }
