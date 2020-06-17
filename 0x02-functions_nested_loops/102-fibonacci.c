@@ -7,15 +7,14 @@
 
 int main(void)
 {
-	int f1, f2, i;
+	int i, t1 = 0, t2 = 1, nextTerm;
 
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i <= 50; ++i)
 	{
-		printf("%d ", f2);
-		printf(", ");
-		int next = f1 + f2;
-		f1 = f2;
-		f2 = next;
+		printf("%d, ", t1);
+		nextTerm = t1 + t2;
+		t1 = t2;
+		t2 = nextTerm;
 	}
 	printf("\n");
 	return (0);
