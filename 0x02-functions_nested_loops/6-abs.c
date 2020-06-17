@@ -3,7 +3,7 @@
 /**
  *_abs - Entry point
  * _abs - main
- *
+ * @n : return
  * Return: 1 o 0
  */
 int _abs(int n)
@@ -12,5 +12,6 @@ int _abs(int n)
 
 
 	int const mask = n >> (sizeof(int) * CHAR_BIT - 1);
+
 	return ((n + mask) ^ mask);
 }
