@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * add - A function that adds two integers
+ * print_to_98 - A function that prints natural numbers
  *@n: integer input
  *
  * Return: natural numbers since n
@@ -10,7 +10,7 @@
 void print_to_98(int n)
 {
 
-	if (n <=98)
+	if (n <= 98)
 	{
 		while (n <= 98)
 		{
