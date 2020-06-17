@@ -3,19 +3,19 @@
 /**
  *print_last_digit - Entry point
  * print_last_digit - main
- * @c : return
+ * @n : return
  * Return: 1 o 0
  */
 
-int print_last_digit(int c)
+int print_last_digit(int n)
 {
-	int ld;
 
-	if (c < 0)
-		c = (-c);
-
-	ld = (c % 10);
-
-	_putchar(ld + '0');
-	return (0);
+	if (n < 0)
+		n = -1 * (n % 10);
+	else
+	{
+		n = n % 10;
+		_putchar(n + '0');
+	}
+	return (n);
 }
