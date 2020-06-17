@@ -4,7 +4,7 @@
  *print_last_digit - Entry point
  * print_last_digit - main
  * @n : return
- * Return: 1 o 0
+ * Return: n
  */
 
 int print_last_digit(int n)
