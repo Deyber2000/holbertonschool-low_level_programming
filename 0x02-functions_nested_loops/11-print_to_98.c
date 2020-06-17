@@ -3,7 +3,6 @@
 /**
  * print_to_98 - A function that prints natural numbers
  *@n: integer input
- *
  * Return: natural numbers since n
  */
 
@@ -34,6 +33,7 @@ void print_to_98(int n)
 			}
 			n--;
 		}
+		printf("\n");
 	}
 
 }
