@@ -7,14 +7,18 @@
 
 int main(void)
 {
-	int i, t1 = 0, t2 = 1, nextTerm;
+	int i, x = 0, y = 1, z = 1;
 
-	for (i = 1; i <= 50; ++i)
+	for (i = 1; i <= 50; i++)
 	{
-		printf("%d, ", t1);
-		nextTerm = t1 + t2;
-		t1 = t2;
-		t2 = nextTerm;
+		z = x + y;
+		x = y;
+		y = z;
+		printf("%d", z);
+		if (i != 50)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
