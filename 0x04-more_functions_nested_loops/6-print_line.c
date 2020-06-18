@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *@n: Number of lines
- * print_line - Prints lines deppending of the number signed
+ * print_line - a function that prints straight lines
+ * @n: Number of lines printed
  **/
 
 void print_line(int n)
