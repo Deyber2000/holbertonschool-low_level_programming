@@ -10,7 +10,7 @@ int main(void)
 {
 	long int n;
 
-	n = 1231952;
+	n = 612852475143;
 
 	long int d = 2, maxFact;
 
