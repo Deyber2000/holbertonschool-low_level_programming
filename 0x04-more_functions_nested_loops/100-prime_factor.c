@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+ * Description: This program show us the larger prime factor of 1231952
  * main - Prints the larger prime number
  * Return: 0 (succefully)
  **/
