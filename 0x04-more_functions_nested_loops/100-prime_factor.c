@@ -9,24 +9,24 @@ int main(void)
 {
 	long int n;
 
-	n = 612852475143;
+	n = 1231952;
 
-	long int div = 2, ans = 0, maxFact;
+	long int d = 2, maxFact;
 
 	while (n != 0)
 	{
-		if ((n % div) != 0)
+		if ((n % d) != 0)
 		{
-			div = div + 1;
+			d = d + 1;
 		}
 		else
 		{
 			maxFact = n;
-			n = n / div;
+			n = n / d;
 			if (n == 1)
 			{
 				printf("%ld", maxFact);
-				ans = 1;
+
 				break;
 			}
 		}
