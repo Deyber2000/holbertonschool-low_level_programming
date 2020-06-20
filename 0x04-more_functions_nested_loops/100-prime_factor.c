@@ -1,18 +1,21 @@
 #include <stdio.h>
 /**
- * Description: This program show us the larger prime factor of 1231952
- * main - Prints the larger prime number
- * Return: 0 (succefully)
- **/
+ *main - Entry point
+ *Return: Always 0 (Success)
+ */
 
 
 int main(void)
 {
 	long int n;
 
+	int d;
+
+	long int maxFact;
+
 	n = 612852475143;
 
-	long int d = 2, maxFact;
+	d = 2;
 
 	while (n != 0)
 	{
