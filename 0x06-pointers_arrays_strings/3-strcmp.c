@@ -7,31 +7,31 @@
  **/
 int _strcmp(char *s1, char *s2)
 {
-	int lens1;
+	int i = 0;
 
 	int c;
 
-	int lens2;
 
-	for (lens1 = 0; s1[lens1] != '\0'; lens1++)
+	for (; s1[i] == s2[i]; i++)
 	{
-		;
+		if (s1[i] == '\0' && s2[i] == '\0')
+		{
+			c = 0;
+			break;
+		}
 	}
-	for (lens2 = 0; s2[lens2] != '\0'; lens2++)
+
+	if (s1[i] != s2[i])
 	{
-		;
-	}
-	if (lens1 > lens2)
-	{
-		c = lens1 * 3;
-	}
-	else if (lens1 == lens2)
-	{
-		c = 0;
-	}
-	else if (lens1 < lens2)
-	{
-		c = -lens1 * 3;
+		if (s1[i] < s2[i])
+		{
+			c = -15;
+		}
+		else if (s1[i] > s2[i])
+		{
+			c = 15;
+		}
+
 	}
 	return (c);
 }
