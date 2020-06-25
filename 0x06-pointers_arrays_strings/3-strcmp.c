@@ -23,7 +23,7 @@ int _strcmp(char *s1, char *s2)
 	}
 	if (lens1 > lens2)
 	{
-		c = 15;
+		c = lens1 * 3;
 	}
 	else if (lens1 == lens2)
 	{
@@ -31,7 +31,7 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (lens1 < lens2)
 	{
-		c = -15;
+		c = -lens1 * 3;
 	}
 	return (c);
 }
