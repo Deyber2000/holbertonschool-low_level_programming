@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - Prints 98
+ * Return: void
+ **/
 int main(void)
 {
 	int n;
@@ -21,4 +24,3 @@ int main(void)
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
-2020 GitHub, Inc.
