@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
- * main - Prints 98
- * Return: void
- **/
+
 int main(void)
 {
 	int n;
