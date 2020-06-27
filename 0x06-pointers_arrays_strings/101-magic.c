@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - Print 98
+ * Return: 0 (Succes)
+ **/
 int main(void)
 {
 	int n;
