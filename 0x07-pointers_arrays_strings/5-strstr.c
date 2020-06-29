@@ -14,7 +14,7 @@ char *_strstr(char *haystack, char *needle)
 		length++;
 	while (*haystack != '\0')
 	{
-		if ((_strncmp(haystack, needle, len) == 0))
+		if ((_strncmp(haystack, needle, length) == 0))
 		{
 			return (haystack);
 		}
