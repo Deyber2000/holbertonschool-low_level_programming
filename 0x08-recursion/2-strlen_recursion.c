@@ -4,15 +4,16 @@
  * @s: String
  * Return: Length of the string
  **/
-int i = 0;
+
 int _strlen_recursion(char *s)
 {
 
 
-	if (*s)
+	if (!*s)
 	{
-		i++;
-		_strlen_recursion(s + 1);
+		return (0);
 	}
-	return (i);
+	s++;
+
+	return (1 + _strlen_recursion(s));
 }
