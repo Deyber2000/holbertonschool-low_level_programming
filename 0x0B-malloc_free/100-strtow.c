@@ -19,7 +19,8 @@ int wordcounter(char *str, int pos, char firstchar)
 	str[0] != ' ' ? (wordcount = 1) : (wordcount = 0);
 	for (i = 0, flag = 0; str[i]; i++)
 	{
-		if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0' && flag == 0)
+		if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0'
+		    && flag == 0)
 		{
 			wordcount++;
 			flag = 1;
@@ -28,7 +29,8 @@ int wordcounter(char *str, int pos, char firstchar)
 		{
 			if (pos > 0 && pos == wordcount && firstchar > 0)
 				return (i);
-			for (charcount = 0; str[i + charcount + 1] != ' '; charcount++)
+			for (charcount = 0; str[i + charcount + 1] != ' ';
+			     charcount++)
 				;
 			return (charcount);
 		}
