@@ -2,33 +2,38 @@
 #include <stdlib.h>
 
 /**
- * main - print opcodes of this function
- * @argc: the size of the argument vector
- * @argv: the argument vector
+ * main - entry point
+ * @argc: number of arguments
+ * @argv: array containing all arguments
  *
- * Return: Always 0
+ * Return: 0 if successful
  */
+
 int main(int argc, char *argv[])
 {
-	int b;
-	char *mem = (char *) main;
+	int bytes, index;
+	char *op_codes;
 
 	if (argc != 2)
 	{
-	printf("Error\n");
-	exit(1);
-}
+		printf("Error\n");
+		exit(1);
+	}
 
-	b = atoi(argv[1]);
+	bytes = atoi(argv[1]);
 
-	if (b < 0)
+	if (bytes < 0)
 	{
-	printf("Error\n");
-	exit(2);
-}
+		printf("Error\n");
+		exit(2);
+	}
 
-	while (b--)
-		printf("%02x%c", *mem++ & 0xff, b ? ' ' : '\n');
+	op_codes = (char *)main;
+
+	for (index = 0; index < bytes - 1; index++)
+		printf("%02hhx ", op_codes[index]);
+
+	printf("%02hhx\n", op_codes[index]);
 
 	return (0);
 }
