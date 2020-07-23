@@ -28,7 +28,10 @@ void *_strdup(const char *src)
 	len = _strlen(src);
 	dest = malloc((len + 1) * sizeof(char));
 	if (dest == NULL)
+	{
+		free(dest);
 		return (NULL);
+	}
 	for (i = 0; src[i]; i++)
 		dest[i] = src[i];
 	dest[i] = '\0';
