@@ -9,7 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t j;
-	if (!str)
+	if (!h)
 	{
 		printf("[0] (nil)");
 	}
